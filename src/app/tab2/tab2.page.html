@@ -1,23 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Aba 1
+      Não Vistos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>
-      <ion-label>Nome:</ion-label>
-    </ion-item>
+  <ion-item>
+    <ion-icon slot="start" name="call-outline" color="primary"></ion-icon>
+    <ion-label>Ligações</ion-label>
+    <ion-badge color="primary" slot="end">3</ion-badge>
+  </ion-item>
 
-    <ion-item>
-      <ion-label>Nota:</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-item>
+    <ion-icon slot="start" name="chatbubble-ellipses-outline" color="warning"></ion-icon>
+    <ion-label>Mensagens</ion-label>
+    <ion-badge color="warning" slot="end">36</ion-badge>
+  </ion-item>
 
-  <ion-button expand="block" color="success">Salvar</ion-button>
-  <ion-button expand="block" color="danger">Cancelar</ion-button>
+  <ion-item>
+    <ion-icon slot="start" name="mail-outline" color="dark"></ion-icon>
+    <ion-label>Emails</ion-label>
+    <ion-badge color="dark" slot="end">23</ion-badge>
+  </ion-item>
 
+  <ion-item>
+    <ion-icon slot="start" name="person-add-outline" color="success"></ion-icon>
+    <ion-label>Novos Seguidores</ion-label>
+    <ion-badge color="success" slot="end">16</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon slot="start" name="heart-outline" color="danger"></ion-icon>
+    <ion-label>Curtidas</ion-label>
+    <ion-badge color="danger" slot="end">43</ion-badge>
+  </ion-item>
 </ion-content>

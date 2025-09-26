@@ -1,51 +1,25 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar>
     <ion-title>
-      Músicas
+      Próximo a você
     </ion-title>
-    <ion-icon slot="end" name="ellipsis-vertical-outline"></ion-icon>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>
-      <ion-label> Música 1</ion-label>
-    </ion-item>
-  <ion-item>
-    <ion-label> Música 2</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 3</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 4</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 5</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 6</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 7</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-label> Música 8</ion-label>
-  </ion-item>
-</ion-list>
+  <ion-chip>
+    <ion-label>Escola </ion-label>
+    <ion-icon name="school-outline"></ion-icon>
+  </ion-chip>
+  <ion-chip color="warning">
+    <ion-label>Academia </ion-label>
+    <ion-icon name="barbell-outline"></ion-icon>
+  </ion-chip>
+  <ion-chip color="primary">
+    <ion-label>Comércio </ion-label>
+    <ion-icon name="card-outline"></ion-icon>
+  </ion-chip>
+  
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar color="light">
-    <ion-title>Reproduzindo: Música 1</ion-title>
-    <ion-buttons slot="end">
-      <ion-button fill="solid">
-        <ion-icon name="pause-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-footer>
+
